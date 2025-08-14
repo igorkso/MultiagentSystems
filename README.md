@@ -10,9 +10,9 @@ A solução está dividida em **duas partes principais**, que devem ser sempre r
 
 # Equipe:
 
-Aluno 1: [Eduardo Nogueira](https://github.com/eduardongal)
-Aluno 2: [Gislany Dias](https://github.com/gislanydias)
-Aluno 3: [Igor Kádson](https://github.com/igorkso)
+- Aluno 1: [Eduardo Nogueira](https://github.com/eduardongal)
+- Aluno 2: [Gislany Dias](https://github.com/gislanydias)
+- Aluno 3: [Igor Kádson](https://github.com/igorkso)
 
 ---
 
