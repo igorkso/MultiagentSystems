@@ -16,8 +16,6 @@ A solução está dividida em **duas partes principais**, que devem ser sempre r
 
 ---
 
----
-
 ## 🎯 Objetivo do Projeto
 Criar uma arquitetura de **sistemas multiagentes** para gerenciar e operar recursos em um ambiente **OpenStack**, utilizando integração entre um **servidor MCP** e **agentes inteligentes**.
 
