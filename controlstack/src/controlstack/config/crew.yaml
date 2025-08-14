@@ -1,0 +1,7 @@
+crew:
+  name: OpenStack Chat Deployment
+  agents:
+    - Teste
+  tasks:
+    - task: conectar_ao_mcp 
+    - task: listar_tools 

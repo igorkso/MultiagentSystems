@@ -1,0 +1,39 @@
+start_conversation:
+  description: >
+    Iniciar conversa com o usuário e perguntar o que ele deseja provisionar.
+  agent: UserInterface
+  expected_output: >
+    Um resumo da necessidade do usuário contendo:
+    - tipo de recurso (ex: VM),
+    - parâmetros técnicos (vCPUs, RAM, imagem, etc.),
+    - credenciais da cloud (URL, app_creds, app_secret, domain).
+
+login_to_cloud:
+  description: >
+    Autenticar no MCP Server via tool `login`, usando os seguintes dados:
+    - cloud_provider_url: {cloud_provider_url}
+    - app_creds: {app_creds}
+    - app_secret: {app_secret}
+    - domain_name: {domain_name}
+
+    Após o login, armazene o session_id retornado para usar em outras tasks.
+  agent: Validator
+  expected_output: >
+    Sessão iniciada com sucesso. session_id: xpto
+
+list_flavors:
+  description: >
+    Usar a ferramenta `list_flavors` com o session_id que foi armazenado anteriormente.
+    Receber os flavors disponíveis da nuvem OpenStack.
+  agent: Validator
+  expected_output: >
+    Lista JSON de flavors disponíveis, contendo no mínimo: nome, vcpus, RAM, disco.
+
+formatar_flavors_para_usuario:
+  description: >
+    Você recebeu uma lista JSON de flavors da task anterior.
+    Transforme em um texto amigável para o usuário, usando markdown se possível.
+  agent: UserInterface
+  expected_output: >
+    Texto formatado e amigável com os flavors disponíveis (nome, vCPU, RAM, disco).
+
