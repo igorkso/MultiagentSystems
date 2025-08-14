@@ -8,6 +8,16 @@ A solução está dividida em **duas partes principais**, que devem ser sempre r
 
 ---
 
+# Equipe:
+
+Aluno 1: [Eduardo Nogueira](https://github.com/eduardongal)
+Aluno 2: [Gislany Dias](https://github.com/gislanydias)
+Aluno 3: [Igor Kádson](https://github.com/igorkso)
+
+---
+
+---
+
 ## 🎯 Objetivo do Projeto
 Criar uma arquitetura de **sistemas multiagentes** para gerenciar e operar recursos em um ambiente **OpenStack**, utilizando integração entre um **servidor MCP** e **agentes inteligentes**.
 
