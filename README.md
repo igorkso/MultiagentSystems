@@ -75,7 +75,7 @@ cd <pasta-do-projeto>
 ### 2️⃣ Criar Ambiente Virtual e Instalar Dependências
 Para o **MCP Server**:
 ```bash
-cd mcp/src
+cd mcp/requirements_mcp.txt
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -86,7 +86,7 @@ Para os **Agentes Inteligentes**:
 cd controlstack
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements_crew.txt
 ```
 
 > **Obs:** Caso não exista um `requirements.txt`, instale manualmente as bibliotecas listadas na seção de **Tecnologias Utilizadas**.
@@ -106,7 +106,6 @@ crewai run
 ---
 
 ## 📌 Observações
-- O projeto ainda está em **fase de organização**, portanto alguns arquivos `.backup` e logs foram mantidos para referência.
 - Cada parte (MCP e Agentes) pode ser desenvolvida e testada separadamente, mas a integração é o ponto central da arquitetura.
 - O MCP Server atua como interface de controle e orquestração, enquanto os agentes executam tarefas de forma autônoma conforme definido nos arquivos `agents.yaml` e `tasks.yaml`.
 
